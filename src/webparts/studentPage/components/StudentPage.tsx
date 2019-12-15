@@ -7,7 +7,7 @@ export default class StudentPage extends React.Component<IStudentPageProps, {}> 
   public render(): React.ReactElement<IStudentPageProps> {
     return (
       <div className={ styles.studentPage }>
-        <p>{escape(this.props.name) || 'update name'}</p>
+        <p>Name: {escape(this.props.name) || 'update name'}</p>
       </div>
     );
   }
