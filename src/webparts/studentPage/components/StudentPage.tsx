@@ -4,10 +4,11 @@ import { IStudentPageProps } from './IStudentPageProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 
 export default class StudentPage extends React.Component<IStudentPageProps, {}> {
+  
   public render(): React.ReactElement<IStudentPageProps> {
     return (
       <div className={ styles.studentPage }>
-        <p>Name: {escape(this.props.name) || 'update name'}</p>
+        <p className={styles.name}>{escape(this.props.name) || 'Full Name'}</p>
       </div>
     );
   }

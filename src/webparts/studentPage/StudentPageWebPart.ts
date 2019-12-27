@@ -10,7 +10,7 @@ import {
 import * as strings from 'StudentPageWebPartStrings';
 import StudentPage from './components/StudentPage';
 import { IStudentPageProps } from './components/IStudentPageProps';
-import { IStudentPageWebPartProps } from './IStudentPageWebPartProps'
+import { IStudentPageWebPartProps } from './IStudentPageWebPartProps';
 
 export default class StudentPageWebPart extends BaseClientSideWebPart<IStudentPageWebPartProps> {
 
