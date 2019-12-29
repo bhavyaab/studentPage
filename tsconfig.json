@@ -20,7 +20,8 @@
     ],
     "types": [
       "es6-promise",
-      "webpack-env"
+      "webpack-env",
+      "node"
     ],
     "lib": [
       "es5",
@@ -29,7 +30,7 @@
     ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts", "route/StudentData.ts"
   ],
   "exclude": [
     "node_modules",
