@@ -10,10 +10,7 @@ import {
 import * as strings from 'StudentPageWebPartStrings';
 import StudentPage from './components/StudentPage';
 import { IStudentPageProps } from './components/IStudentPageProps';
-
-export interface IStudentPageWebPartProps {
-  description: string;
-}
+import { IStudentPageWebPartProps } from './IStudentPageWebPartProps';
 
 export default class StudentPageWebPart extends BaseClientSideWebPart<IStudentPageWebPartProps> {
 
@@ -21,7 +18,7 @@ export default class StudentPageWebPart extends BaseClientSideWebPart<IStudentPa
     const element: React.ReactElement<IStudentPageProps > = React.createElement(
       StudentPage,
       {
-        description: this.properties.description
+        name: this.properties.name,
       }
     );
 
@@ -47,8 +44,8 @@ export default class StudentPageWebPart extends BaseClientSideWebPart<IStudentPa
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                PropertyPaneTextField('name', {
+                  label: strings.NameFieldLabel
                 })
               ]
             }
